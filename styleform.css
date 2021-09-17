@@ -1,0 +1,225 @@
+
+*{
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+
+body{
+    margin:0;
+    background-color: #DDD;
+    height:100vh;
+    display:flex;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.login-box{
+    display:flex;
+    margin:0 auto;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+    height: 65vh;
+    width:40%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    margin-left:1.5rem;
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+    margin-top: 3rem;
+}
+
+input[type='text'],input[type='password'],input[type='email']{
+    height:3rem;
+    width:100%;
+    margin-bottom: 1.5rem;
+    border:none;
+    border-bottom: 1px solid #AAA;
+    outline: none;
+    font-size: 1rem;
+
+}
+
+input[type='submit']{
+    width:40%;
+    height: 3rem;
+    color: #FFF;
+    background: #16a085;
+    text-transform: uppercase;
+    border:none;
+    font-weight: bold;
+    transition: 0.1s ease;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.loginwith{
+    margin-bottom: 1.5rem;
+}
+
+.social-signin{
+    width:60%;
+    margin-bottom: 2rem;
+    height: 2.5rem;
+    color:#fff;
+    border:none;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.facebook{
+    background: #32508E;
+}
+.twitter{
+    background: #55ACEE;
+}
+.google{
+    background: #DD4B39;
+}
+
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.simple-login{
+    background-color: #16a085;
+    width: 100%;
+}
+.form-width{
+    width: 60%;
+}
+
+button.middle{
+    width: 6rem ;
+    height: 3rem ;
+    border-radius: 50% ;
+    border: none ;
+    margin-left: 2rem ;
+    background-color: #ddd ;
+    color:black;
+}
+
+#demo{
+    display: block;
+    color:red;
+}
+button.logout{
+    width: 7rem;
+    height: 2.5rem;
+    color: #FFF;
+    background:  #DD4B39;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+}
+button.logout:hover,
+button.logout:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+  opacity: 0.5;
+}
+
+@media(max-width:1030px){
+    .login-box{
+    width:80%;
+    }
+}
+@media(max-width:500px){
+    .login-box{
+    width:80%;
+    height: 100vh;
+    }
+    .login-box{
+        flex-direction: column;
+    
+    }
+    button.middle{
+     margin-top: 1.5rem;
+     width:3rem;
+     height: 3rem;
+     margin-right: 2rem;
+    }
+    input[type='text'],input[type='password'],input[type='email']{
+       width:80%;
+       margin-bottom: 0%;
+    }
+    .social-signin{
+        margin-bottom: 1rem;
+    }
+    .right{
+        margin-top: 0.5rem;
+    }
+    
+
+}
+
+@media(max-height:614px){
+   
+    .login-box{
+        height: 100vh;
+        }
+    
+        input[type='submit']{
+            height:2.3rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+    .middle{
+        display:none;
+    }
+    h1{
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+    .facebook{
+        background: #32508E;
+        height:1.7rem;
+    }
+    .twitter{
+        background: #55ACEE;
+        height:1.7rem;
+    }
+    .google{
+        background: #DD4B39;
+        height:1.7rem;
+    }
+    .simple-login{
+        height: 1.5rem;
+    }
+    input[type='text'],input[type='password'],input[type='email']{
+    margin-bottom: 0%;
+    
+    }
+}
